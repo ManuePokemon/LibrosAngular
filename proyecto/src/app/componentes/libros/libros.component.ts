@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import listaLibros from 'src/assets/json/libros.json';
 
 @Component({
   selector: 'app-libros',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibrosComponent implements OnInit {
 
-  constructor() { }
+  libros:any = listaLibros;
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+    console.log(listaLibros);
   }
 
 }
